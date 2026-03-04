@@ -1,17 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WhenLambor (WHENL)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhenLambor ($WHENL) - Coming Soon</title>
     <style>
-        body { font-family: monospace; background: #0a0a0a; color: #00ff88; padding: 40px; text-align: center; }
-        img { width: 200px; border-radius: 50%; border: 4px solid #00ff88; }
-        h1 { color: #00ff88; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: radial-gradient(ellipse at 50% 30%, #1a0a2e 0%, #0a0a0a 70%);
+        }
+        .container { max-width: 500px; text-align: center; }
+        .meme { font-size: 4rem; margin-bottom: 20px; }
+        .logo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 5px solid #00ff88;
+            box-shadow: 0 0 50px #00ff8866, 0 0 100px #00ff8833;
+            margin: 0 auto 30px;
+            overflow: hidden;
+            background: #1a1a1a;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow { from { box-shadow: 0 0 50px #00ff8866; } to { box-shadow: 0 0 80px #00ff88; } }
+        .logo img { width: 100%; height: 100%; object-fit: cover; }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00ff88, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease-in-out infinite;
+        }
+        @keyframes gradient {
+            0%,100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(30deg); }
+        }
+        .symbol {
+            font-size: 1.8rem;
+            color: #888;
+            margin-bottom: 25px;
+            letter-spacing: 4px;
+        }
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 1px solid #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 20px 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            background: linear-gradient(135deg, #00ff88, #00ccff);
+            color: #000;
+            border-radius: 50px;
+            box-shadow: 0 0 40px #00ff8866;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 60px #00ff88;
+        }
+        .tagline {
+            margin-top: 30px;
+            font-size: 2rem;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <img src="logo.png"><br>
-    <h1>WhenLambor ($WHENL)</h1>
-    <p>When Lambo? SoonTM 🐸🚗</p>
-    <a href="https://pump.fun" style="color: #00ffff;">BUY ON PUMP.FUN</a>
+    <div class="container">
+        <div class="meme">🐸🚗💨</div>
+        <div class="logo">
+            <img src="logo.png" alt="WhenLambor">
+        </div>
+        <h1>WhenLambor</h1>
+        <div class="symbol">$WHENL</div>
+        <div class="description">
+            <strong>The meme token for believers.</strong><br><br>
+            Not IF. WHEN.<br><br>
+            🐸 = Frog<br>
+            🚗 = Lambo<br>
+            💨 = SoonTM<br><br>
+            <em>When Lambo? Coming.</em>
+        </div>
+        <a href="https://pump.fun" class="btn" target="_blank">
+            🚀 COMING SOON
+        </a>
+        <div class="tagline">🌕 TO THE MOON 🌕</div>
+        <div class="footer">
+            Built on Solana • Powered by memes
+        </div>
+    </div>
 </body>
 </html>
